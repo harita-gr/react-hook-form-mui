@@ -37,7 +37,7 @@ const FormValidationWithYup = () => {
       <input type="password" {...register("password")} />
       <br />
       {errors.password && errors.password?.message && (
-        <span>{errors.password.message}</span>
+        <span style={{ color: "red" }}>{errors.password.message}</span>
       )}
       <br />
       <input type="submit" />

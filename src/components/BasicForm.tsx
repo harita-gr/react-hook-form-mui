@@ -36,7 +36,9 @@ const BasicForm = () => {
         })}
       />
       <br />
-      {errors.password && <span>This field is required</span>}
+      {errors.password && (
+        <span style={{ color: "red" }}>This field is required</span>
+      )}
       <br />
       <input type="submit" />
     </form>
